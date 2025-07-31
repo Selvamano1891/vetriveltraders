@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/vetriveltraders/static/css/main.3e26b2f5.css",
-    "main.js": "/vetriveltraders/static/js/main.e7451e93.js",
+    "main.js": "/vetriveltraders/static/js/main.4c7d0bf8.js",
     "index.html": "/vetriveltraders/index.html",
     "main.3e26b2f5.css.map": "/vetriveltraders/static/css/main.3e26b2f5.css.map",
-    "main.e7451e93.js.map": "/vetriveltraders/static/js/main.e7451e93.js.map"
+    "main.4c7d0bf8.js.map": "/vetriveltraders/static/js/main.4c7d0bf8.js.map"
   },
   "entrypoints": [
     "static/css/main.3e26b2f5.css",
-    "static/js/main.e7451e93.js"
+    "static/js/main.4c7d0bf8.js"
   ]
 }
