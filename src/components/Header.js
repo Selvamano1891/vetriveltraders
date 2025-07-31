@@ -53,7 +53,8 @@ const Header = () => {
           <div className="flex items-center">
             <div className="w-14 h-14 mr-4 p-1">
               <img 
-                src="/assets/images/company-logo.jpeg" 
+              
+                src={`${process.env.PUBLIC_URL}/assets/images/company-logo.jpeg`}
                 alt="Vetrivel Traders Logo"
                 className="w-full h-full object-contain rounded-lg"
                 onError={(e) => {

@@ -17,7 +17,7 @@ export const productCategories = [
     title: "Corporate Apparel",
     description: "Custom printed/embroidered T-shirts, jackets, uniforms, and safety vests with DL/CL/IDL branding for all sizes and colors.",
     items: ["T-Shirts", "Jackets", "Sun Protectors", "Uniforms & Safety Vests"],
-     image: "/assets/images/corporate_potofilo.svg",
+     image: `${process.env.PUBLIC_URL}/assets/images/corporate_potofilo.svg`,
     products: [
       {
         name: "T-Shirts",
@@ -42,7 +42,7 @@ export const productCategories = [
     title: "PPE Safety Wearables",
     description: "Complete range of personal protective equipment including gloves, masks, safety shoes, helmets, and protective gear.",
     items: ["Safety Gloves", "Face Masks", "Safety Shoes", "Helmets", "Safety Goggles", "Reflective Jackets"],
-    image: "/assets/images/ppe_safty_wearable.svg",
+    image: `${process.env.PUBLIC_URL}/assets/images/ppe_safty_wearable.svg`,
     products: [
       {
         name: "Gloves",
@@ -87,7 +87,7 @@ export const productCategories = [
     title: "Housekeeping & Facility Items",
     description: "Commercial-grade cleaning tools, disinfectants, tissue papers, and color-coded dustbins for waste segregation.",
     items: ["Cleaning Tools", "Disinfectants", "Tissue & Napkins", "Color-coded Dustbins"],
-    image: "/assets/images/house_keeping_products.svg",
+    image: `${process.env.PUBLIC_URL}/assets/images/house_keeping_products.svg`,
     products: [
       {
         name: "Mops, Buckets, Brooms",
@@ -116,7 +116,7 @@ export const productCategories = [
     title: "ESG & Safety Display Boards",
     description: "Custom display stands, sustainability boards, signage boards, and safety communication materials for workplace awareness.",
     items: ["ESG Display Stands", "Safety Signage", "Process Info Boards", "Lean Reminders"],
-    image: "/assets/images/esg-displays.svg",
+    image: `${process.env.PUBLIC_URL}/assets/images/esg-displays.svg`,
     products: [
       {
         name: "ESG Display Stands",
@@ -137,7 +137,7 @@ export const productCategories = [
     title: "Production Support Materials",
     description: "ESD mats, assembly line table covers, grounding wrist bands, and packaging materials for manufacturing environments.",
     items: ["ESD Mats", "Table Covers", "Wrist Bands", "Packaging Materials"],
-    image: "/assets/images/product-support-portofilo.svg",
+    image: `${process.env.PUBLIC_URL}/assets/images/product-support-portofilo.svg`,
     products: [
       {
         name: "ESD Mats",
@@ -162,7 +162,7 @@ export const productCategories = [
     title: "Special Services",
     description: "Comprehensive branding, customization, fast delivery, EMS compliance, and end-to-end supply management services.",
     items: ["Branding & Customization", "Fast Delivery", "EMS Compliance", "Vendor Management"],
-    image: "/assets/images/special-services.svg",
+    image: `${process.env.PUBLIC_URL}/assets/images/special-services.svg`,
     products: [
       {
         name: "Branding & Customization",
@@ -244,36 +244,36 @@ export const galleryItems = [
     id: "1",
     category: "Safety Equipment",
     alt: "Construction workers wearing safety helmets and reflective vests",
-    image: "/assets/images/ppe-safety.svg"
+    image: `${process.env.PUBLIC_URL}/assets/images/ppe-safety.svg`
   },
   {
     id: "2",
     category: "Corporate Apparel",
     alt: "Professional corporate uniforms and business attire",
-    image: "/assets/images/corporate-apparel.svg"
+    image: `${process.env.PUBLIC_URL}/assets/images/corporate-apparel.svg`
   },
   {
     id: "3",
     category: "Housekeeping",
     alt: "Industrial cleaning supplies and maintenance equipment",
-    image: "/assets/images/housekeeping.svg"
+    image: `${process.env.PUBLIC_URL}/assets/images/housekeeping.svg`
   },
   {
     id: "4",
     category: "Production Support",
     alt: "Manufacturing assembly line with production support materials",
-    image: "/assets/images/production-support.svg"
+    image: `${process.env.PUBLIC_URL}/assets/images/production-support.svg`
   },
   {
     id: "5",
     category: "Safety Displays",
     alt: "Workplace safety signage and ESG compliance displays",
-    image: "/assets/images/esg-displays.svg"
+    image: `${process.env.PUBLIC_URL}/assets/images/esg-displays.svg`
   },
   {
     id: "6",
     category: "Branding Services",
     alt: "Corporate branding and customization services showcase",
-    image: "/assets/images/special-services.svg"
+    image: `${process.env.PUBLIC_URL}/assets/images/special-services.svg`
   }
 ];

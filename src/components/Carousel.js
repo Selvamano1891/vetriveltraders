@@ -9,7 +9,7 @@ const Carousel = () => {
       title: "Corporate Apparel Solutions",
       subtitle: "Custom branded clothing for all your business needs",
       description: "T-shirts, jackets, uniforms, and safety vests with DL/CL/IDL branding. All sizes and colors available.",
-      image: "/assets/images/corporate_potofilo.svg",
+      image: `${process.env.PUBLIC_URL}/assets/images/corporate_potofilo.svg`,
       bgColor: "from-blue-600 to-blue-800",
       features: ["Custom Printing", "All Sizes & Colors", "Professional Branding"]
     },
@@ -18,7 +18,7 @@ const Carousel = () => {
       title: "PPE Safety Equipment",
       subtitle: "Complete protection for workplace safety",
       description: "Comprehensive range of personal protective equipment including gloves, masks, helmets, and safety gear.",
-      image: "/assets/images/ppe-safety.svg",
+      image: `${process.env.PUBLIC_URL}/assets/images/ppe-safety.svg`,
       bgColor: "from-red-500 to-orange-600",
       features: ["IS Certified", "Industrial Grade", "Full Protection"]
     },
@@ -27,7 +27,7 @@ const Carousel = () => {
       title: "Housekeeping Supplies",
       subtitle: "Commercial-grade cleaning solutions",
       description: "Professional cleaning tools, disinfectants, and color-coded waste management systems.",
-      image: "/assets/images/housekeeping.svg",
+      image: `${process.env.PUBLIC_URL}/assets/images/housekeeping.svg`,
       bgColor: "from-cyan-500 to-emerald-600",
       features: ["Eco-Friendly", "Bulk Options", "Color-Coded Systems"]
     },
@@ -36,7 +36,7 @@ const Carousel = () => {
       title: "Production Support",
       subtitle: "ESD-safe manufacturing materials",
       description: "Anti-static mats, assembly line covers, grounding equipment, and packaging materials.",
-      image: "/assets/images/production-support.svg",
+      image: `${process.env.PUBLIC_URL}/assets/images/production-support.svg`,
       bgColor: "from-gray-600 to-gray-800",
       features: ["ESD Compliant", "Manufacturing Ready", "Quality Materials"]
     }
