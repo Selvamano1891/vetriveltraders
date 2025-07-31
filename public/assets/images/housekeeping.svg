@@ -1,0 +1,19 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F8FAFC"/>
+  <g transform="translate(150, 60)">
+    <!-- Mop bucket -->
+    <rect x="20" y="80" width="40" height="50" rx="5" fill="#6B7280"/>
+    <rect x="22" y="82" width="36" height="35" fill="#3B82F6"/>
+    <!-- Mop handle -->
+    <rect x="38" y="20" width="4" height="70" fill="#92400E"/>
+    <!-- Mop head -->
+    <ellipse cx="40" cy="15" rx="15" ry="8" fill="#FDE047"/>
+    <!-- Cleaning supplies -->
+    <rect x="70" y="90" width="15" height="25" rx="3" fill="#10B981"/>
+    <rect x="90" y="85" width="12" height="30" rx="3" fill="#EF4444"/>
+    <!-- Dustbin -->
+    <rect x="10" y="95" width="25" height="35" rx="3" fill="#64748B"/>
+  </g>
+  <text x="200" y="200" text-anchor="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="16" font-weight="600">Housekeeping & Facility</text>
+  <text x="200" y="220" text-anchor="middle" fill="#94A3B8" font-family="Arial, sans-serif" font-size="12">Cleaning Tools, Disinfectants & Waste Management</text>
+</svg>
