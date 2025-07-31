@@ -1,25 +1,73 @@
-<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="300" fill="#F8FAFC"/>
-  <g transform="translate(120, 50)">
-    <!-- Display board/stand -->
-    <rect x="40" y="30" width="80" height="100" rx="5" fill="#374151"/>
-    <rect x="45" y="35" width="70" height="90" fill="#F3F4F6"/>
-    
-    <!-- Content sections on board -->
-    <rect x="50" y="40" width="60" height="15" fill="#10B981"/>
-    <rect x="50" y="60" width="45" height="8" fill="#64748B"/>
-    <rect x="50" y="72" width="55" height="8" fill="#64748B"/>
-    <rect x="50" y="84" width="40" height="8" fill="#64748B"/>
-    
-    <!-- Charts/graphs -->
-    <rect x="50" y="100" width="15" height="20" fill="#3B82F6"/>
-    <rect x="70" y="110" width="15" height="10" fill="#EF4444"/>
-    <rect x="90" y="105" width="15" height="15" fill="#F59E0B"/>
-    
-    <!-- Stand base -->
-    <rect x="70" y="130" width="20" height="40" fill="#6B7280"/>
-    <rect x="60" y="170" width="40" height="8" fill="#374151"/>
-  </g>
-  <text x="200" y="210" text-anchor="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="16" font-weight="600">ESG & Safety Displays</text>
-  <text x="200" y="230" text-anchor="middle" fill="#94A3B8" font-family="Arial, sans-serif" font-size="12">Display Stands, Signage Boards & Safety Communication</text>
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="displayBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="200" fill="url(#displayBg)"/>
+  
+  <!-- Floor Stand Display -->
+  <rect x="40" y="40" width="50" height="70" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" rx="4"/>
+  <rect x="45" y="45" width="40" height="25" fill="#10b981" rx="2"/>
+  <text x="65" y="60" text-anchor="middle" fill="white" font-size="8" font-weight="bold">ESG</text>
+  <rect x="45" y="75" width="40" height="2" fill="#d1d5db"/>
+  <rect x="45" y="80" width="30" height="2" fill="#d1d5db"/>
+  <rect x="45" y="85" width="35" height="2" fill="#d1d5db"/>
+  <rect x="45" y="90" width="25" height="2" fill="#d1d5db"/>
+  
+  <!-- Stand Base -->
+  <ellipse cx="65" cy="120" rx="15" ry="5" fill="#6b7280"/>
+  <rect x="62" y="110" width="6" height="10" fill="#6b7280"/>
+  
+  <!-- Wall Mounted Board -->
+  <rect x="120" y="50" width="60" height="40" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" rx="4"/>
+  <rect x="125" y="55" width="50" height="12" fill="#3b82f6" rx="2"/>
+  <text x="150" y="64" text-anchor="middle" fill="white" font-size="8" font-weight="bold">SAFETY FIRST</text>
+  <rect x="125" y="72" width="15" height="15" fill="#ef4444" rx="2"/>
+  <text x="132.5" y="82" text-anchor="middle" fill="white" font-size="10" font-weight="bold">!</text>
+  <rect x="145" y="75" width="25" height="2" fill="#d1d5db"/>
+  <rect x="145" y="80" width="20" height="2" fill="#d1d5db"/>
+  <rect x="145" y="85" width="15" height="2" fill="#d1d5db"/>
+  
+  <!-- Signage Board -->
+  <rect x="200" y="45" width="45" height="55" fill="#f59e0b" stroke="#d97706" stroke-width="2" rx="4"/>
+  <circle cx="222.5" cy="65" r="8" fill="#ffffff"/>
+  <path d="M222.5 60 L222.5 75" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="222.5" cy="78" r="1.5" fill="#ef4444"/>
+  <text x="222.5" y="92" text-anchor="middle" fill="white" font-size="7" font-weight="bold">PPE ZONE</text>
+  
+  <!-- Process Info Board -->
+  <rect x="60" y="130" width="80" height="35" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" rx="4"/>
+  <rect x="65" y="135" width="70" height="8" fill="#8b5cf6" rx="2"/>
+  <text x="100" y="141" text-anchor="middle" fill="white" font-size="6" font-weight="bold">PROCESS WORKFLOW</text>
+  <circle cx="75" cy="152" r="3" fill="#10b981"/>
+  <text x="75" y="155" text-anchor="middle" fill="white" font-size="6">1</text>
+  <line x1="78" y1="152" x2="88" y2="152" stroke="#d1d5db" stroke-width="2"/>
+  <circle cx="95" cy="152" r="3" fill="#3b82f6"/>
+  <text x="95" y="155" text-anchor="middle" fill="white" font-size="6">2</text>
+  <line x1="98" y1="152" x2="108" y2="152" stroke="#d1d5db" stroke-width="2"/>
+  <circle cx="115" cy="152" r="3" fill="#f59e0b"/>
+  <text x="115" y="155" text-anchor="middle" fill="white" font-size="6">3</text>
+  
+  <!-- Lean Board -->
+  <rect x="160" y="120" width="60" height="45" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" rx="4"/>
+  <rect x="165" y="125" width="50" height="10" fill="#22c55e" rx="2"/>
+  <text x="190" y="132" text-anchor="middle" fill="white" font-size="7" font-weight="bold">5S WORKPLACE</text>
+  <rect x="170" y="140" width="8" height="8" fill="#ef4444" rx="1"/>
+  <text x="174" y="146" text-anchor="middle" fill="white" font-size="6">S</text>
+  <rect x="180" y="140" width="8" height="8" fill="#f59e0b" rx="1"/>
+  <text x="184" y="146" text-anchor="middle" fill="white" font-size="6">S</text>
+  <rect x="190" y="140" width="8" height="8" fill="#22c55e" rx="1"/>
+  <text x="194" y="146" text-anchor="middle" fill="white" font-size="6">S</text>
+  <rect x="200" y="140" width="8" height="8" fill="#3b82f6" rx="1"/>
+  <text x="204" y="146" text-anchor="middle" fill="white" font-size="6">S</text>
+  <rect x="185" y="150" width="8" height="8" fill="#8b5cf6" rx="1"/>
+  <text x="189" y="156" text-anchor="middle" fill="white" font-size="6">S</text>
+  
+  <!-- Labels -->
+  <text x="150" y="180" text-anchor="middle" fill="#1e293b" font-size="12" font-weight="bold">ESG & Safety Displays</text>
+  <text x="150" y="195" text-anchor="middle" fill="#64748b" font-size="10">Compliance & Awareness Boards</text>
 </svg>

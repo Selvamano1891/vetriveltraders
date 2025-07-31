@@ -14,16 +14,17 @@
     <!-- Custom CSS for styling -->
     <style>
       :root {
-        --primary: #3b82f6;
-        --primary-dark: #2563eb;
-        --secondary: #10b981;
+        --primary: #2563eb;
+        --primary-dark: #1d4ed8;
+        --secondary: #059669;
+        --accent: #0891b2;
         --text-dark: #1e293b;
         --text-light: #64748b;
         --bg-light: #f8fafc;
       }
       
       .hero-gradient {
-        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 50%, var(--secondary) 100%);
+        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 30%, var(--secondary) 70%, var(--accent) 100%);
       }
       
       .card-hover {
@@ -32,11 +33,22 @@
       
       .card-hover:hover {
         transform: translateY(-4px);
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.15), 0 10px 10px -5px rgba(37, 99, 235, 0.1);
       }
       
       html {
         scroll-behavior: smooth;
+      }
+      
+      .bg-brand-gradient {
+        background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 30%, #059669 70%, #0891b2 100%);
+      }
+      
+      .text-brand-gradient {
+        background: linear-gradient(135deg, #2563eb 0%, #059669 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
       }
     </style>
   </head>

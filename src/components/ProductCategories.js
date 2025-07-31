@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { productCategories } from '../data/companyData';
+import ProductModal from './ProductModal';
 
 const ProductCategories = () => {
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (category) => {
+    setSelectedCategory(category);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedCategory(null);
+  };
+
   return (
     <section id="products" className="py-20 bg-slate-50">
       <div className="container mx-auto px-4">
@@ -48,14 +62,34 @@ const ProductCategories = () => {
                     ))}
                   </div>
                 </div>
-                <button className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
-                  View Details
-                </button>
+                <div className="flex gap-3">
+                  <button 
+                    className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl font-medium"
+                    onClick={() => openModal(category)}
+                  >
+                    View Details
+                  </button>
+                  <button 
+                    className="px-4 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-lg transition-all duration-300 font-medium"
+                    onClick={() => {
+                      const element = document.getElementById('contact');
+                      if (element) element.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                  >
+                    Quote
+                  </button>
+                </div>
               </div>
             </div>
           ))}
         </div>
       </div>
+      
+      <ProductModal 
+        category={selectedCategory}
+        isOpen={isModalOpen}
+        onClose={closeModal}
+      />
     </section>
   );
 };
