@@ -1,0 +1,113 @@
+<svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="safetyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef2f2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fee2e2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="500" height="400" fill="url(#safetyBg)"/>
+  
+  <!-- Safety Helmet with Details -->
+  <g transform="translate(60, 40)">
+    <ellipse cx="50" cy="40" rx="40" ry="35" fill="#dc2626"/>
+    <ellipse cx="50" cy="35" rx="35" ry="30" fill="#ef4444"/>
+    <rect x="10" y="70" width="80" height="8" fill="#b91c1c" rx="4"/>
+    <!-- Helmet Strap -->
+    <path d="M15 75 Q50 85 85 75" stroke="#374151" stroke-width="2" fill="none"/>
+    <!-- Ventilation Holes -->
+    <circle cx="35" cy="30" r="2" fill="#b91c1c"/>
+    <circle cx="50" cy="25" r="2" fill="#b91c1c"/>
+    <circle cx="65" cy="30" r="2" fill="#b91c1c"/>
+    <!-- Safety Sticker -->
+    <rect x="35" y="45" width="30" height="12" fill="#ffffff" rx="2"/>
+    <text x="50" y="53" text-anchor="middle" fill="#dc2626" font-size="6" font-weight="bold">IS CERTIFIED</text>
+  </g>
+  
+  <!-- Safety Gloves Pair -->
+  <g transform="translate(180, 50)">
+    <path d="M10 30 L30 25 L50 30 L55 40 L50 60 L30 65 L10 60 Z" 
+          fill="#10b981" stroke="#059669" stroke-width="2"/>
+    <path d="M60 35 L80 30 L100 35 L105 45 L100 65 L80 70 L60 65 Z" 
+          fill="#10b981" stroke="#059669" stroke-width="2"/>
+    <!-- Grip Pattern -->
+    <g stroke="#047857" stroke-width="1" fill="none">
+      <path d="M15 40 L20 38 L25 40 L30 38 L35 40"/>
+      <path d="M15 50 L20 48 L25 50 L30 48 L35 50"/>
+      <path d="M65 45 L70 43 L75 45 L80 43 L85 45"/>
+      <path d="M65 55 L70 53 L75 55 L80 53 L85 55"/>
+    </g>
+    <!-- Size Labels -->
+    <text x="32" y="52" text-anchor="middle" fill="#ffffff" font-size="6" font-weight="bold">L</text>
+    <text x="82" y="57" text-anchor="middle" fill="#ffffff" font-size="6" font-weight="bold">L</text>
+  </g>
+  
+  <!-- Safety Shoes -->
+  <g transform="translate(330, 70)">
+    <ellipse cx="50" cy="50" rx="45" ry="25" fill="#374151"/>
+    <rect x="5" y="45" width="90" height="15" fill="#4b5563" rx="7"/>
+    <!-- Steel Toe -->
+    <rect x="70" y="35" width="25" height="15" fill="#6b7280" rx="3"/>
+    <!-- Sole Pattern -->
+    <rect x="10" y="60" width="80" height="5" fill="#1f2937"/>
+    <g fill="#374151">
+      <rect x="15" y="62" width="3" height="2"/>
+      <rect x="22" y="62" width="3" height="2"/>
+      <rect x="29" y="62" width="3" height="2"/>
+      <rect x="36" y="62" width="3" height="2"/>
+      <rect x="43" y="62" width="3" height="2"/>
+      <rect x="50" y="62" width="3" height="2"/>
+      <rect x="57" y="62" width="3" height="2"/>
+      <rect x="64" y="62" width="3" height="2"/>
+      <rect x="71" y="62" width="3" height="2"/>
+      <rect x="78" y="62" width="3" height="2"/>
+    </g>
+    <!-- Safety Rating -->
+    <rect x="25" y="40" width="20" height="10" fill="#fbbf24" rx="2"/>
+    <text x="35" y="47" text-anchor="middle" fill="#92400e" font-size="5" font-weight="bold">S3</text>
+  </g>
+  
+  <!-- Safety Goggles -->
+  <g transform="translate(80, 150)">
+    <ellipse cx="50" cy="30" rx="35" ry="20" fill="#3b82f6" opacity="0.8"/>
+    <!-- Lenses -->
+    <circle cx="35" cy="30" r="15" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="65" cy="30" r="15" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <!-- Strap -->
+    <path d="M15 30 Q5 35 5 45 Q5 55 15 60" stroke="#374151" stroke-width="3" fill="none"/>
+    <path d="M85 30 Q95 35 95 45 Q95 55 85 60" stroke="#374151" stroke-width="3" fill="none"/>
+    <!-- Anti-fog coating indicator -->
+    <circle cx="35" cy="30" r="8" fill="none" stroke="#1e40af" stroke-width="1" stroke-dasharray="2,1"/>
+    <circle cx="65" cy="30" r="8" fill="none" stroke="#1e40af" stroke-width="1" stroke-dasharray="2,1"/>
+  </g>
+  
+  <!-- N95 Mask -->
+  <g transform="translate(250, 160)">
+    <ellipse cx="40" cy="25" rx="30" ry="20" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2"/>
+    <!-- Breathing Valve -->
+    <circle cx="55" cy="25" r="4" fill="#6b7280" stroke="#4b5563" stroke-width="1"/>
+    <!-- Filter Lines -->
+    <g stroke="#9ca3af" stroke-width="0.5">
+      <line x1="20" y1="20" x2="60" y2="20"/>
+      <line x1="18" y1="25" x2="62" y2="25"/>
+      <line x1="20" y1="30" x2="60" y2="30"/>
+    </g>
+    <!-- Ear Straps -->
+    <path d="M10 25 Q5 20 5 15 Q5 10 10 5" stroke="#e5e7eb" stroke-width="2" fill="none"/>
+    <path d="M70 25 Q75 20 75 15 Q75 10 70 5" stroke="#e5e7eb" stroke-width="2" fill="none"/>
+    <!-- Certification Mark -->
+    <text x="40" y="40" text-anchor="middle" fill="#6b7280" font-size="4">N95 CERTIFIED</text>
+  </g>
+  
+  <!-- Information Panel -->
+  <g transform="translate(50, 280)">
+    <rect x="0" y="0" width="400" height="100" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" rx="12"/>
+    <text x="200" y="25" text-anchor="middle" fill="#1f2937" font-size="18" font-weight="bold">Personal Protective Equipment</text>
+    <text x="200" y="50" text-anchor="middle" fill="#6b7280" font-size="13">IS Certified • Industrial Grade • Complete Safety Solutions</text>
+    <g transform="translate(0, 60)">
+      <text x="80" y="15" text-anchor="middle" fill="#dc2626" font-size="10" font-weight="semibold">Helmets & Masks</text>
+      <text x="200" y="15" text-anchor="middle" fill="#10b981" font-size="10" font-weight="semibold">Gloves & Footwear</text>
+      <text x="320" y="15" text-anchor="middle" fill="#3b82f6" font-size="10" font-weight="semibold">Eye Protection</text>
+    </g>
+  </g>
+</svg>

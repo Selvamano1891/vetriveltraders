@@ -1,0 +1,131 @@
+<svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="prodBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="esdGrid" patternUnits="userSpaceOnUse" width="10" height="10">
+      <rect width="10" height="10" fill="#dbeafe" opacity="0.3"/>
+      <circle cx="5" cy="5" r="1" fill="#3b82f6" opacity="0.6"/>
+    </pattern>
+  </defs>
+  
+  <rect width="500" height="400" fill="url(#prodBg)"/>
+  
+  <!-- ESD Anti-Static Mat -->
+  <g transform="translate(50, 40)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#esdGrid)" stroke="#2563eb" stroke-width="3" rx="8"/>
+    <rect x="10" y="10" width="100" height="60" fill="#dbeafe" opacity="0.7" rx="4"/>
+    <text x="60" y="35" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="bold">ESD MAT</text>
+    <text x="60" y="50" text-anchor="middle" fill="#3730a3" font-size="8">ANTI-STATIC</text>
+    <!-- Ground Connection -->
+    <circle cx="15" cy="65" r="4" fill="#dc2626"/>
+    <line x1="19" y1="65" x2="40" y2="65" stroke="#374151" stroke-width="2"/>
+    <text x="50" y="68" fill="#6b7280" font-size="6">GROUND</text>
+  </g>
+  
+  <!-- Assembly Line Table Cover -->
+  <g transform="translate(220, 50)">
+    <rect x="0" y="0" width="140" height="60" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2" rx="6"/>
+    <rect x="10" y="10" width="120" height="40" fill="#e5e7eb" rx="4"/>
+    <text x="70" y="25" text-anchor="middle" fill="#374151" font-size="10" font-weight="bold">ASSEMBLY TABLE COVER</text>
+    <text x="70" y="38" text-anchor="middle" fill="#6b7280" font-size="7">CUSTOM CUT • ESD SAFE</text>
+    
+    <!-- SMT Components on table -->
+    <rect x="20" y="20" width="12" height="8" fill="#22c55e" rx="2"/>
+    <rect x="40" y="25" width="10" height="10" fill="#ef4444" rx="2"/>
+    <rect x="60" y="22" width="15" height="6" fill="#3b82f6" rx="1"/>
+    <rect x="85" y="20" width="18" height="12" fill="#f59e0b" rx="2"/>
+    <rect x="110" y="25" width="8" height="8" fill="#8b5cf6" rx="1"/>
+    
+    <!-- Table legs -->
+    <rect x="10" y="60" width="6" height="25" fill="#6b7280"/>
+    <rect x="124" y="60" width="6" height="25" fill="#6b7280"/>
+  </g>
+  
+  <!-- ESD Wrist Band -->
+  <g transform="translate(400, 40)">
+    <ellipse cx="40" cy="30" rx="30" ry="12" fill="#1f2937" stroke="#374151" stroke-width="2"/>
+    <ellipse cx="40" cy="30" rx="25" ry="10" fill="#4b5563"/>
+    <!-- Connection Point -->
+    <circle cx="20" cy="30" r="3" fill="#dc2626"/>
+    <!-- Coiled Wire -->
+    <path d="M23 30 Q30 25 35 30 Q40 35 45 30 Q50 25 55 30 Q60 35 65 30" 
+          stroke="#6b7280" stroke-width="2" fill="none"/>
+    <!-- Ground Clip -->
+    <rect x="65" y="25" width="8" height="10" fill="#374151" rx="2"/>
+    <text x="40" y="55" text-anchor="middle" fill="#374151" font-size="8" font-weight="bold">ESD WRIST BAND</text>
+  </g>
+  
+  <!-- Packaging Materials Section -->
+  <g transform="translate(80, 160)">
+    <!-- Bubble Wrap Roll -->
+    <rect x="0" y="0" width="40" height="60" fill="#fbbf24" stroke="#f59e0b" stroke-width="2" rx="4"/>
+    <g fill="#ffffff" opacity="0.8">
+      <circle cx="10" cy="15" r="3"/>
+      <circle cx="20" cy="15" r="3"/>
+      <circle cx="30" cy="15" r="3"/>
+      <circle cx="15" cy="25" r="3"/>
+      <circle cx="25" cy="25" r="3"/>
+      <circle cx="10" cy="35" r="3"/>
+      <circle cx="20" cy="35" r="3"/>
+      <circle cx="30" cy="35" r="3"/>
+      <circle cx="15" cy="45" r="3"/>
+      <circle cx="25" cy="45" r="3"/>
+    </g>
+    <text x="20" y="75" text-anchor="middle" fill="#92400e" font-size="8" font-weight="bold">BUBBLE WRAP</text>
+    
+    <!-- ESD Bags -->
+    <rect x="60" y="5" width="35" height="50" fill="#e0e7ff" stroke="#3730a3" stroke-width="2" stroke-dasharray="3,2" rx="4"/>
+    <text x="77.5" y="25" text-anchor="middle" fill="#3730a3" font-size="10" font-weight="bold">ESD</text>
+    <text x="77.5" y="35" text-anchor="middle" fill="#3730a3" font-size="8">SAFE</text>
+    <text x="77.5" y="45" text-anchor="middle" fill="#3730a3" font-size="6">BAGS</text>
+    <text x="77.5" y="75" text-anchor="middle" fill="#3730a3" font-size="8" font-weight="bold">ANTI-STATIC BAGS</text>
+    
+    <!-- Carton Boxes -->
+    <rect x="110" y="10" width="50" height="40" fill="#d4b499" stroke="#92400e" stroke-width="2" rx="4"/>
+    <line x1="120" y1="30" x2="150" y2="30" stroke="#92400e" stroke-width="1.5"/>
+    <line x1="135" y1="20" x2="135" y2="40" stroke="#92400e" stroke-width="1.5"/>
+    <!-- Box Flaps -->
+    <path d="M115 10 L120 5 L150 5 L155 10" stroke="#92400e" stroke-width="1" fill="none"/>
+    <text x="135" y="75" text-anchor="middle" fill="#92400e" font-size="8" font-weight="bold">CARTON BOXES</text>
+    
+    <!-- Poly Bags -->
+    <ellipse cx="200" cy="30" rx="25" ry="18" fill="#ffffff" stroke="#d1d5db" stroke-width="2" opacity="0.9"/>
+    <path d="M180 20 Q200 15 220 20" stroke="#d1d5db" stroke-width="1" fill="none"/>
+    <text x="200" y="35" text-anchor="middle" fill="#6b7280" font-size="8" font-weight="bold">POLY</text>
+    <text x="200" y="75" text-anchor="middle" fill="#6b7280" font-size="8" font-weight="bold">POLY BAGS</text>
+  </g>
+  
+  <!-- Ground Connection Symbol -->
+  <g transform="translate(350, 180)">
+    <line x1="0" y1="0" x2="0" y2="25" stroke="#374151" stroke-width="3"/>
+    <line x1="-12" y1="25" x2="12" y2="25" stroke="#374151" stroke-width="3"/>
+    <line x1="-8" y1="30" x2="8" y2="30" stroke="#374151" stroke-width="3"/>
+    <line x1="-4" y1="35" x2="4" y2="35" stroke="#374151" stroke-width="3"/>
+    <text x="0" y="55" text-anchor="middle" fill="#374151" font-size="8" font-weight="bold">EARTH GROUND</text>
+  </g>
+  
+  <!-- Production Line Equipment -->
+  <g transform="translate(420, 160)">
+    <rect x="0" y="0" width="60" height="40" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2" rx="6"/>
+    <circle cx="15" cy="20" r="5" fill="#22c55e"/>
+    <line x1="20" y1="20" x2="30" y2="20" stroke="#6b7280" stroke-width="2"/>
+    <circle cx="35" cy="20" r="5" fill="#3b82f6"/>
+    <line x1="40" y1="20" x2="50" y2="20" stroke="#6b7280" stroke-width="2"/>
+    <circle cx="55" cy="20" r="5" fill="#ef4444"/>
+    <text x="30" y="60" text-anchor="middle" fill="#374151" font-size="7" font-weight="bold">PRODUCTION LINE</text>
+  </g>
+  
+  <!-- Information Panel -->
+  <g transform="translate(50, 280)">
+    <rect x="0" y="0" width="400" height="100" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" rx="12"/>
+    <text x="200" y="25" text-anchor="middle" fill="#1f2937" font-size="18" font-weight="bold">Production Support Materials</text>
+    <text x="200" y="50" text-anchor="middle" fill="#6b7280" font-size="13">ESD Compliant • Manufacturing Ready • Anti-Static Solutions</text>
+    <g transform="translate(0, 65)">
+      <text x="100" y="15" text-anchor="middle" fill="#3b82f6" font-size="10" font-weight="semibold">ESD Mats & Covers</text>
+      <text x="200" y="15" text-anchor="middle" fill="#1f2937" font-size="10" font-weight="semibold">Wrist Bands & Grounding</text>
+      <text x="300" y="15" text-anchor="middle" fill="#f59e0b" font-size="10" font-weight="semibold">Packaging Materials</text>
+    </g>
+  </g>
+</svg>
