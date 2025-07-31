@@ -15,7 +15,7 @@ export const productCategories = [
     title: "Corporate Apparel",
     description: "Custom printed/embroidered T-shirts, jackets, uniforms, and safety vests with DL/CL/IDL branding for all sizes and colors.",
     items: ["T-Shirts", "Jackets", "Sun Protectors", "Uniforms & Safety Vests"],
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center",
     products: [
       {
         name: "T-Shirts",
@@ -40,7 +40,7 @@ export const productCategories = [
     title: "PPE Safety Wearables",
     description: "Complete range of personal protective equipment including gloves, masks, safety shoes, helmets, and protective gear.",
     items: ["Safety Gloves", "Face Masks", "Safety Shoes", "Helmets", "Safety Goggles", "Reflective Jackets"],
-    image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=600&h=400&fit=crop&crop=center",
     products: [
       {
         name: "Gloves",
@@ -85,7 +85,7 @@ export const productCategories = [
     title: "Housekeeping & Facility Items",
     description: "Commercial-grade cleaning tools, disinfectants, tissue papers, and color-coded dustbins for waste segregation.",
     items: ["Cleaning Tools", "Disinfectants", "Tissue & Napkins", "Color-coded Dustbins"],
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop&crop=center",
     products: [
       {
         name: "Mops, Buckets, Brooms",
@@ -135,7 +135,7 @@ export const productCategories = [
     title: "Production Support Materials",
     description: "ESD mats, assembly line table covers, grounding wrist bands, and packaging materials for manufacturing environments.",
     items: ["ESD Mats", "Table Covers", "Wrist Bands", "Packaging Materials"],
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600&h=400&fit=crop&crop=center",
     products: [
       {
         name: "ESD Mats",

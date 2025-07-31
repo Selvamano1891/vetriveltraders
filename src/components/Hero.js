@@ -53,8 +53,14 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="py-12 lg:py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50">
-      <div className="container mx-auto px-6 lg:px-8">
+    <>
+      {/* Primary Products Carousel - At the Very Top */}
+      <div className="bg-black">
+        <PrimaryProductsCarousel onProductClick={handleProductClick} />
+      </div>
+      
+      <section id="home" className="py-12 lg:py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50">
+        <div className="container mx-auto px-6 lg:px-8">
         {/* Professional Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl mb-8">
@@ -134,18 +140,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Primary Products Carousel */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Our Primary Products
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Discover our core product categories designed for industrial and corporate applications
-            </p>
-          </div>
-          <PrimaryProductsCarousel onProductClick={handleProductClick} />
-        </div>
+
 
         {/* Professional Statistics */}
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-16">
@@ -184,8 +179,9 @@ const Hero = () => {
             </button>
           </div>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 };
 
