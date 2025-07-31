@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { productCategories } from '../data/companyData';
+import ProductModal from './ProductModal';
 
 const ProductCategories = () => {
-  const handleViewProducts = () => {
-    // This will be handled by parent App component for navigation
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    // We'll pass this up through props later
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleViewDetails = (category) => {
+    setSelectedCategory(category);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedCategory(null);
   };
 
   return (
@@ -62,9 +70,9 @@ const ProductCategories = () => {
                 <div className="flex gap-4">
                   <button 
                     className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold text-sm uppercase tracking-wide"
-                    onClick={handleViewProducts}
+                    onClick={() => handleViewDetails(category)}
                   >
-                    View All Products
+                    View Details
                   </button>
                   <button 
                     className="px-6 py-4 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-xl transition-all duration-300 font-semibold text-sm uppercase tracking-wide"
@@ -81,6 +89,12 @@ const ProductCategories = () => {
           ))}
         </div>
       </div>
+      
+      <ProductModal 
+        category={selectedCategory}
+        isOpen={isModalOpen}
+        onClose={closeModal}
+      />
     </section>
   );
 };
