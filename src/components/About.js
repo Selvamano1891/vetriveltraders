@@ -1,6 +1,7 @@
 import React from 'react';
 import { companyInfo } from '../data/companyData';
 
+
 const About = () => {
   return (
     <section id="about" className="py-20 bg-slate-50">
@@ -37,7 +38,7 @@ const About = () => {
               <div className="text-center">
 
                 <img 
-              src="/assets/images/about.svg" 
+              src={`${process.env.PUBLIC_URL}/assets/images/about.svg`} 
               alt="Vetrivel Traders Logo"
               className="w-full h-full object-contain rounded-xl"
               onError={(e) => {
