@@ -9,7 +9,7 @@ const Carousel = () => {
       title: "Corporate Apparel Solutions",
       subtitle: "Custom branded clothing for all your business needs",
       description: "T-shirts, jackets, uniforms, and safety vests with DL/CL/IDL branding. All sizes and colors available.",
-      image: "/assets/images/corporate-apparel.svg",
+      image: "/assets/images/corporate_potofilo.svg",
       bgColor: "from-blue-600 to-blue-800",
       features: ["Custom Printing", "All Sizes & Colors", "Professional Branding"]
     },

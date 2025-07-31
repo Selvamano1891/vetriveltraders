@@ -35,11 +35,24 @@ const About = () => {
           <div className="relative">
             <div className="w-full h-96 bg-gradient-to-br from-blue-100 to-green-100 rounded-2xl flex items-center justify-center">
               <div className="text-center">
-                <div className="w-24 h-24 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+
+                <img 
+              src="/assets/images/about.svg" 
+              alt="Vetrivel Traders Logo"
+              className="w-full h-full object-contain rounded-xl"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'flex';
+              }}
+            />
+            <div className="hidden w-full h-full bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl items-center justify-center shadow-xl">
+              <span className="text-white font-bold text-2xl">VT</span>
+            </div>
+                {/* <div className="w-24 h-24 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-4xl font-bold text-blue-600">VT</span>
                 </div>
                 <p className="text-lg text-slate-700">Trusted Corporate Partner</p>
-                <p className="text-sm text-slate-500 mt-2">Serving Industries Across India</p>
+                <p className="text-sm text-slate-500 mt-2">Serving Industries Across India</p> */}
               </div>
             </div>
           </div>

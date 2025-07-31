@@ -1,10 +1,12 @@
 // Company Information
+
+import image from '..'
 export const companyInfo = {
   name: "Vetrivel Traders",
-  tagline: "Corporate Solutions",
-  email: "sales@vetriveltraders.com",
-  phone: "+91-9891985454",
-  address: "New Delhi, India",
+  tagline: "Your Satisfication Our Priority",
+  email: "vetriveltrader24@gmail.com",
+  phone: "+91-9751172198",
+  address: "NS Infocity, 116 , 1 Ragunathpura, Raghunathapur, Karanataka - 561205",
   description: "Your trusted partner for end-to-end corporate solutions. We provide quality products and services to industries across India with a commitment to excellence and reliability."
 };
 
@@ -15,14 +17,14 @@ export const productCategories = [
     title: "Corporate Apparel",
     description: "Custom printed/embroidered T-shirts, jackets, uniforms, and safety vests with DL/CL/IDL branding for all sizes and colors.",
     items: ["T-Shirts", "Jackets", "Sun Protectors", "Uniforms & Safety Vests"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center",
+     image: "/assets/images/corporate_potofilo.svg",
     products: [
       {
         name: "T-Shirts",
         description: "Custom printed/embroidered, all sizes/colors, DL/CL/IDL branding"
       },
       {
-        name: "Jackets", 
+        name: "Jackets",
         description: "All-season branded jackets for staff and visitors"
       },
       {
@@ -40,7 +42,7 @@ export const productCategories = [
     title: "PPE Safety Wearables",
     description: "Complete range of personal protective equipment including gloves, masks, safety shoes, helmets, and protective gear.",
     items: ["Safety Gloves", "Face Masks", "Safety Shoes", "Helmets", "Safety Goggles", "Reflective Jackets"],
-    image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=600&h=400&fit=crop&crop=center",
+    image: "/assets/images/ppe_safty_wearable.svg",
     products: [
       {
         name: "Gloves",
@@ -85,7 +87,7 @@ export const productCategories = [
     title: "Housekeeping & Facility Items",
     description: "Commercial-grade cleaning tools, disinfectants, tissue papers, and color-coded dustbins for waste segregation.",
     items: ["Cleaning Tools", "Disinfectants", "Tissue & Napkins", "Color-coded Dustbins"],
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop&crop=center",
+    image: "/assets/images/house_keeping_products.svg",
     products: [
       {
         name: "Mops, Buckets, Brooms",
@@ -135,7 +137,7 @@ export const productCategories = [
     title: "Production Support Materials",
     description: "ESD mats, assembly line table covers, grounding wrist bands, and packaging materials for manufacturing environments.",
     items: ["ESD Mats", "Table Covers", "Wrist Bands", "Packaging Materials"],
-    image: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600&h=400&fit=crop&crop=center",
+    image: "/assets/images/product-support-portofilo.svg",
     products: [
       {
         name: "ESD Mats",

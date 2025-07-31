@@ -63,7 +63,7 @@ const Hero = () => {
         <div className="container mx-auto px-6 lg:px-8">
         {/* Professional Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl mb-8">
+         {/*  <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl mb-8">
             <img 
               src="/assets/images/company-logo.jpeg" 
               alt="Vetrivel Traders Logo"
@@ -76,17 +76,17 @@ const Hero = () => {
             <div className="hidden w-full h-full bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl items-center justify-center shadow-xl">
               <span className="text-white font-bold text-2xl">VT</span>
             </div>
-          </div>
+          </div> */}
           
           <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
             <span className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text text-transparent">
-              Professional B2B Solutions
+              We are here for all your corporate needs.
             </span>
           </h1>
           
           <p className="text-xl lg:text-2xl mb-12 text-gray-600 leading-relaxed max-w-5xl mx-auto font-medium">
-            Trusted corporate partner delivering end-to-end industrial solutions across India. 
-            From safety equipment to production materials, we power your business operations.
+            End-to-End Industrial Supplies, Delivered with Precision
+From PPE and corporate apparel to production support and branding solutions—we ensure quality, speed, and EMS-compliant service across India.
           </p>
 
           {/* Product Search */}
