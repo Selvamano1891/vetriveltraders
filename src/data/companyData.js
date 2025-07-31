@@ -15,7 +15,7 @@ export const productCategories = [
     title: "Corporate Apparel",
     description: "Custom printed/embroidered T-shirts, jackets, uniforms, and safety vests with DL/CL/IDL branding for all sizes and colors.",
     items: ["T-Shirts", "Jackets", "Sun Protectors", "Uniforms & Safety Vests"],
-    image: "/assets/images/corporate-apparel.svg",
+    image: "/assets/images/products/corporate-apparel-real.svg",
     products: [
       {
         name: "T-Shirts",
@@ -40,7 +40,7 @@ export const productCategories = [
     title: "PPE Safety Wearables",
     description: "Complete range of personal protective equipment including gloves, masks, safety shoes, helmets, and protective gear.",
     items: ["Safety Gloves", "Face Masks", "Safety Shoes", "Helmets", "Safety Goggles", "Reflective Jackets"],
-    image: "/assets/images/ppe-safety.svg",
+    image: "/assets/images/products/ppe-safety-real.svg",
     products: [
       {
         name: "Gloves",
@@ -85,7 +85,7 @@ export const productCategories = [
     title: "Housekeeping & Facility Items",
     description: "Commercial-grade cleaning tools, disinfectants, tissue papers, and color-coded dustbins for waste segregation.",
     items: ["Cleaning Tools", "Disinfectants", "Tissue & Napkins", "Color-coded Dustbins"],
-    image: "/assets/images/housekeeping.svg",
+    image: "/assets/images/products/housekeeping-real.svg",
     products: [
       {
         name: "Mops, Buckets, Brooms",
@@ -135,7 +135,7 @@ export const productCategories = [
     title: "Production Support Materials",
     description: "ESD mats, assembly line table covers, grounding wrist bands, and packaging materials for manufacturing environments.",
     items: ["ESD Mats", "Table Covers", "Wrist Bands", "Packaging Materials"],
-    image: "/assets/images/production-support.svg",
+    image: "/assets/images/products/production-support-real.svg",
     products: [
       {
         name: "ESD Mats",

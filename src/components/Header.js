@@ -51,7 +51,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 lg:px-8 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <div className="w-14 h-14 mr-4 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl p-2 shadow-lg">
+            <div className="w-14 h-14 mr-4 p-1">
               <img 
                 src="/assets/images/company-logo.jpeg" 
                 alt="Vetrivel Traders Logo"
@@ -61,7 +61,7 @@ const Header = () => {
                   e.target.nextSibling.style.display = 'flex';
                 }}
               />
-              <div className="hidden w-full h-full items-center justify-center">
+              <div className="hidden w-full h-full bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg items-center justify-center">
                 <span className="text-white font-bold text-xl">VT</span>
               </div>
             </div>

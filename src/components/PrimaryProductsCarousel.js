@@ -4,47 +4,51 @@ import { productCategories } from '../data/companyData';
 const PrimaryProductsCarousel = ({ onProductClick }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
-  // Primary products based on business importance
+  // Primary products with realistic content and images
   const primaryProducts = [
     {
       id: "corporate-apparel",
-      title: "Corporate Apparel",
-      subtitle: "Custom Branded Professional Clothing",
-      description: "Complete range of T-shirts, jackets, uniforms, and safety vests with custom branding for all industrial requirements.",
-      image: "/assets/images/corporate-apparel.svg",
-      bgGradient: "from-blue-600 via-blue-700 to-blue-800",
-      highlights: ["Custom Branding", "All Sizes Available", "DL/CL/IDL Compliant"],
-      cta: "Explore Apparel Solutions"
+      title: "Corporate Apparel Solutions",
+      subtitle: "Professional Branded Clothing for Every Industry",
+      description: "Complete range of custom T-shirts, branded jackets, industrial uniforms, and safety vests. All sizes available with DL/CL/IDL category compliance for professional environments.",
+      image: "/assets/images/products/corporate-apparel-real.svg",
+      bgGradient: "from-slate-900 via-blue-900 to-slate-800",
+      highlights: ["Custom Printing & Embroidery", "All Sizes & Colors", "IS Standards Compliant", "Fast Delivery"],
+      cta: "View Corporate Apparel",
+      stats: { clients: "500+", products: "50+", delivery: "7 Days" }
     },
     {
       id: "ppe-safety",
       title: "PPE Safety Equipment",
-      subtitle: "Complete Personal Protective Equipment",
-      description: "IS-certified safety equipment including helmets, gloves, shoes, masks, and protective gear for workplace safety.",
-      image: "/assets/images/ppe-safety.svg",
-      bgGradient: "from-red-600 via-orange-600 to-amber-600",
-      highlights: ["IS Certified", "Industrial Grade", "Complete Protection"],
-      cta: "View Safety Equipment"
+      subtitle: "Complete Personal Protection Solutions",
+      description: "IS-certified safety helmets, industrial gloves, safety shoes, N95 masks, and protective eyewear. All equipment meets international safety standards for workplace protection.",
+      image: "/assets/images/products/ppe-safety-real.svg",
+      bgGradient: "from-red-800 via-orange-700 to-red-900",
+      highlights: ["IS Certified Equipment", "International Standards", "Complete Safety Range", "Bulk Orders"],
+      cta: "Safety Equipment Catalog",
+      stats: { certified: "IS", protection: "100%", categories: "15+" }
     },
     {
       id: "production-support",
       title: "Production Support Materials",
       subtitle: "ESD-Safe Manufacturing Solutions",
-      description: "Anti-static mats, assembly line covers, ESD wrist bands, and packaging materials for electronics manufacturing.",
-      image: "/assets/images/production-support.svg",
-      bgGradient: "from-gray-700 via-slate-700 to-zinc-800",
-      highlights: ["ESD Compliant", "Manufacturing Ready", "Anti-Static"],
-      cta: "Production Solutions"
+      description: "Anti-static ESD mats, custom assembly line covers, grounding wrist bands, and specialized packaging materials for electronics and manufacturing industries.",
+      image: "/assets/images/products/production-support-real.svg",
+      bgGradient: "from-gray-800 via-slate-800 to-gray-900",
+      highlights: ["ESD Compliant Materials", "Custom Manufacturing", "Anti-Static Solutions", "Quality Assured"],
+      cta: "Manufacturing Solutions",
+      stats: { compliance: "ESD", industries: "20+", customization: "100%" }
     },
     {
       id: "housekeeping",
-      title: "Industrial Housekeeping",
-      subtitle: "Commercial Cleaning Solutions",
-      description: "Professional-grade cleaning supplies, color-coded waste management, and facility maintenance products.",
-      image: "/assets/images/housekeeping.svg",
-      bgGradient: "from-emerald-600 via-teal-600 to-cyan-700",
-      highlights: ["Commercial Grade", "Color-Coded Systems", "Eco-Friendly"],
-      cta: "Cleaning Solutions"
+      title: "Commercial Housekeeping",
+      subtitle: "Professional Facility Management",
+      description: "Commercial-grade cleaning equipment, eco-friendly chemicals, color-coded waste management systems, and professional maintenance supplies for large facilities.",
+      image: "/assets/images/products/housekeeping-real.svg",
+      bgGradient: "from-emerald-800 via-teal-800 to-cyan-900",
+      highlights: ["Commercial Grade", "Eco-Friendly Options", "Color-Coded Systems", "Bulk Supply"],
+      cta: "Facility Solutions",
+      stats: { facilities: "200+", products: "100+", coverage: "Pan India" }
     }
   ];
 
@@ -88,70 +92,86 @@ const PrimaryProductsCarousel = ({ onProductClick }) => {
             <div className="relative z-10 h-full flex items-center">
               <div className="container mx-auto px-6 lg:px-8">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
-                  <div className="text-white space-y-6">
-                    <div className="space-y-4">
-                      <h2 className="text-4xl lg:text-6xl font-bold leading-tight">
+                  <div className="text-white space-y-8">
+                    <div className="space-y-6">
+                      <h2 className="text-3xl lg:text-5xl font-bold leading-tight">
                         {product.title}
                       </h2>
-                      <p className="text-xl lg:text-2xl font-medium text-gray-100">
+                      <p className="text-lg lg:text-xl font-medium text-gray-100 leading-relaxed">
                         {product.subtitle}
                       </p>
                     </div>
                     
-                    <p className="text-lg leading-relaxed text-gray-200 max-w-xl">
+                    <p className="text-base lg:text-lg leading-relaxed text-gray-200 max-w-2xl">
                       {product.description}
                     </p>
                     
-                    <div className="flex flex-wrap gap-3">
+                    {/* Product Stats */}
+                    <div className="grid grid-cols-3 gap-4 max-w-md">
+                      {Object.entries(product.stats).map(([key, value], idx) => (
+                        <div key={idx} className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                          <div className="text-2xl font-bold">{value}</div>
+                          <div className="text-xs uppercase tracking-wide opacity-90">{key}</div>
+                        </div>
+                      ))}
+                    </div>
+                    
+                    <div className="flex flex-wrap gap-2">
                       {product.highlights.map((highlight, idx) => (
                         <span 
                           key={idx} 
-                          className="bg-white/20 backdrop-blur-sm border border-white/30 px-4 py-2 rounded-full text-sm font-medium"
+                          className="bg-white/15 backdrop-blur-sm border border-white/20 px-3 py-2 rounded-full text-sm font-medium"
                         >
-                          {highlight}
+                          ✓ {highlight}
                         </span>
                       ))}
                     </div>
                     
-                    <div className="flex gap-4 pt-4">
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
                       <button 
-                        className="bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl"
+                        className="bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl text-base"
                         onClick={() => onProductClick && onProductClick(product.id)}
                       >
                         {product.cta}
                       </button>
                       <button 
-                        className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold px-8 py-4 rounded-xl transition-all duration-300"
+                        className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold px-8 py-4 rounded-xl transition-all duration-300 text-base"
                         onClick={() => {
                           const element = document.getElementById('contact');
                           if (element) element.scrollIntoView({ behavior: 'smooth' });
                         }}
                       >
-                        Request Quote
+                        Get Enterprise Quote
                       </button>
                     </div>
                   </div>
                   
                   <div className="relative">
-                    <div className="w-full max-w-lg mx-auto">
-                      <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
+                    <div className="w-full max-w-2xl mx-auto">
+                      <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-6 border border-white/10 shadow-2xl">
                         <img 
                           src={product.image} 
                           alt={product.title}
-                          className="w-full h-72 object-contain"
+                          className="w-full h-80 object-contain drop-shadow-2xl"
                           onError={(e) => {
                             e.target.style.display = 'none';
                             e.target.nextSibling.style.display = 'flex';
                           }}
                         />
-                        <div className="hidden items-center justify-center w-full h-72">
+                        <div className="hidden items-center justify-center w-full h-80">
                           <div className="text-center text-white">
-                            <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                              <span className="text-3xl font-bold">VT</span>
+                            <div className="w-24 h-24 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl">
+                              <span className="text-4xl font-bold">VT</span>
                             </div>
-                            <p className="text-lg font-medium">{product.title}</p>
+                            <p className="text-xl font-semibold">{product.title}</p>
+                            <p className="text-sm opacity-80 mt-2">Professional Solutions</p>
                           </div>
                         </div>
+                      </div>
+                      
+                      {/* Floating Quality Badge */}
+                      <div className="absolute -top-4 -right-4 bg-yellow-500 text-yellow-900 px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                        Premium Quality
                       </div>
                     </div>
                   </div>

@@ -10,18 +10,29 @@ const Hero = () => {
   const handleSearch = (searchTerm) => {
     if (!searchTerm.trim()) {
       setShowSearchResults(false);
+      setSearchResults([]);
       return;
     }
 
-    const results = productCategories.filter(category => 
-      category.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      category.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      category.items.some(item => item.toLowerCase().includes(searchTerm.toLowerCase())) ||
-      (category.products && category.products.some(product => 
-        product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        product.description.toLowerCase().includes(searchTerm.toLowerCase())
-      ))
-    );
+    const term = searchTerm.toLowerCase().trim();
+    const results = productCategories.filter(category => {
+      // Search in category title
+      if (category.title.toLowerCase().includes(term)) return true;
+      
+      // Search in category description
+      if (category.description.toLowerCase().includes(term)) return true;
+      
+      // Search in category items
+      if (category.items.some(item => item.toLowerCase().includes(term))) return true;
+      
+      // Search in individual products if they exist
+      if (category.products && category.products.some(product => 
+        product.name.toLowerCase().includes(term) ||
+        product.description.toLowerCase().includes(term)
+      )) return true;
+      
+      return false;
+    });
     
     setSearchResults(results);
     setShowSearchResults(true);
@@ -46,17 +57,17 @@ const Hero = () => {
       <div className="container mx-auto px-6 lg:px-8">
         {/* Professional Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl mb-8 shadow-xl">
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl mb-8">
             <img 
               src="/assets/images/company-logo.jpeg" 
               alt="Vetrivel Traders Logo"
-              className="w-16 h-16 object-contain rounded-xl"
+              className="w-full h-full object-contain rounded-xl"
               onError={(e) => {
                 e.target.style.display = 'none';
                 e.target.nextSibling.style.display = 'flex';
               }}
             />
-            <div className="hidden w-16 h-16 items-center justify-center">
+            <div className="hidden w-full h-full bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl items-center justify-center shadow-xl">
               <span className="text-white font-bold text-2xl">VT</span>
             </div>
           </div>
